@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presta Socio</title>
+    <link rel="shortcut icon" type="image/jpg" href="imagenes/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap-theme.min.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos/prestamos.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/form.css">
+    <meta name="google-site-verification" content="TFlszAAM4jJtBRU8GjXdTf_8Wo2Mn2EspqcrlkTeYd8" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-reverse">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/logo.png" alt="Logo" class="d-inline-block align-top logo">
+        </a>
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ml-auto justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Inicio</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link selected" href="prestamos.html">Préstamos</a>
+            </li>
+            <li class="nav-item me-2">
+                <a class="nav-link  " href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item d-none d-lg-inline">
+                <a class="nav-link" href="https://www.facebook.com/prestasocio.pe" target="_blank"><img src="imagenes/fb.png" alt=""></a>
+            </li>
+            <li class="nav-item d-none d-lg-inline">
+                <a class="nav-link" href="https://www.instagram.com/prestasocio.pe/" target="_blank"><img src="imagenes/instagram.png" alt=""></a>
+            </li>
+            <li class="nav-item me-2 d-none d-lg-inline">
+                <a class="nav-link" href="https://wa.me/51970488823" target="_blank"><img src="imagenes/wsp.png" alt=""></a>
+            </li>
+            <li class="nav-item me-3 d-none d-lg-inline mt-2">
+                <a href="https://www.tiktok.com/@prestasocio" target="_blank"><i class="fa-brands fa-tiktok" style="color: white; border-radius: 50px;background-color: #e20e5f;border: 4px solid #e20e5f; margin-top: 3px;"></i></a>
+            </li>
+            <li class="nav-item me-3 d-none d-lg-inline mt-2">
+                <a href="https://www.youtube.com/channel/UCJlRGflUnJJG8YOtVZ7EGfw" target="_blank"><i class="fa-brands fa-youtube" style="color: white; border-radius: 100px;background-color: #e20e5f;border: 4px solid #e20e5f;margin-top: 3px;"></i></a>
+            </li>
+        
+          </ul>
+        </div>
+      </nav>
+  <!--fin del nav-->
+
+    <main id="main-invertir">
+    <div class="fila pt-5" id="prestamo">
+        <div class="container d-flex align-items-center">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <!-- FORM -->
+                    <form id="regForm" name="fprestamo" class="">
+                        <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span>
+                            <span class="step"></span> <span class="step"></span> <span class="step"></span>
+                        </div>
+                        <div class="tab tab-inactive form-item">
+                            <!-- <a class="info" href="#">
+                                <i class="fa-regular fa-circle-question"></i>
+                            </a> -->
+                            <div class="pt-4 text-center">
+                                <h4 class="title-landing">Si lo crees, lo logras</h4>
+                                <p class="subtext1-landing" style="color:#e20e5f">PrestaSocio te impulsamos a crecer</p> <br>
+    
+                                <p class="subtext2-landing" style="color: #000070 !important;">Déjanos tus datos y califica a tu préstamo con garantía hipotecaria</p>
+                            </div>
+                            <div class="sim">
+                                <div class="mb-3 row">
+                                    <div class="slider-col sim-param form-input" id="formSolicitante1">
+                                        <div class="amount">
+                                            <div class="d-flex justify-content-center amount-box">
+                                                <i class="fa-solid fa-circle-minus fa-xl" id="menos-monto" onclick="manejoCantidad(-1)"></i>
+                                                <input type="text" class="form-control input-form-inversiones text-center py-3" name="amount-input" id="amount-input" pos="-1" readonly placeholder="Necesito">
+                                                <i class="fa-solid fa-circle-plus fa-xl" id="mas-monto" onclick="manejoCantidad(1)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <select name="" id="tipoMoneda" class="form-select input-form-inversiones">
+                                            <option value="">Moneda</option>
+                                            <option value="1">SOLES</option>
+                                            <option value="2">DÓLARES</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <select name="" id="tipoPrestamo" class="form-select input-form-inversiones">
+                                            <option value="">Tipo de préstamo</option>
+                                            <option value="1">CUOTAS FIJAS</option>
+                                            <option value="2">SÓLO INTERESES</option>
+                                            <option value="3">PRÉSTAMO PUENTE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <select name="" id="plazoPago" class="form-select input-form-inversiones">
+                                            <option value="">Plazo de pago</option>
+                                        </select>
+                                    </div>
+                                </div>
+    
+                                <div class="mb-3 text-center">
+                                    <button type="button" class="btn" onclick="nextPrev(1)">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab tab-inactive form-item">
+                            <div class="pt-4 text-center">
+                                <h4 class="title-landing">Completa tus datos y califica</h4>
+                            </div>
+                            <div class="slider-row">
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <select name="" id="tipoDocumento" class="form-select input-form-inversiones">
+                                            <option value="">Tipo de documento</option>
+                                            <option value="DNI">DNI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control input-form-inversiones" id="txtDocumento" placeholder="Número de documento" maxlength="11" minlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control input-form-inversiones" id="txtNombres" placeholder="Nombres y Apellidos" oninput="this.value = this.value.replace(/[^áéíóúa-zÁÉÍÓÚA-Z\s]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <input type="email" class="form-control input-form-inversiones" id="txtCorreo" placeholder="Correo">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <input type="tel" class="form-control input-form-inversiones" id="txtCelular" placeholder="Número de celular" maxlength="9" minlength="9" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <button type="button" class="btn" onclick="nextPrev(1)">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab tab-inactive form-item">
+                            <div class="pt-4 text-center">
+                                <h4 class="title-landing">Completa tus datos y califica</h4>
+                            </div>
+                            <div class="slider-row">
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <select name="provincia" id="provincia" class="form-select input-form-inversiones" onchange="cambia_provincia()">
+                                            <option value="">Provincia</option>
+                                            <option value="1">Lima</option>
+                                            <option value="2">Callao</option>
+                                            <option value="3">Cañete</option>
+                                            <option value="4">Huaura</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <select name="distrito" id="distrito" class="form-select input-form-inversiones">
+                                            <option value="1">Distrito</option>                                        
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-12">
+                                        <select name="" id="tipo_garantia" class="form-select input-form-inversiones">
+                                            <option value="">Tipo de garantia</option>
+                                            <option value="1">Casa</option>
+                                            <option value="2">Departamento</option>
+                                            <option value="3">Local comercial</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <button type="button" class="btn" onclick="nextPrev(1)" id="to-result">Simular cuotas</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab tab-inactive form-item">
+                            <div class="pt-4 text-center">
+                                <h4 class="subtitle_simulador">Cuota calculada</h4>
+                            </div>
+                            <div id="resultado_simulador">
+                                <div id="result_monto">
+                                    <div class="d-flex align-items-center">
+                                        <span id="result-m" class="result-m"></span>
+                                        <h2 id="r-mensual" class="result-amount"></h2>
+                                        <span class="result-t" id="result-t">x mes</span>
+                                    </div>
+                                </div>
+                                <div id="datos-simulador">
+                                    <table class="table">
+                                        <tr>
+                                            <td class="des">Tasa</td>
+                                            <td>desde 2%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="des">Moneda</td>
+                                            <td><span id="r-mone"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="des">Monto</td>
+                                            <td><span id="r-monto"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="des">Tipo de pago</td>
+                                            <td><span id="r-tpago"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="des">Plazo</td>
+                                            <td><span id="r-plazo"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="des">Cuota</td>
+                                            <td><span id="r-cuota"></span></td>
+                                        </tr>
+                                    </table>
+                                    <div class="info-simulador text-center">
+                                        <p>* La tasa dependerá del tipo de evaluación</p>
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#cronograma_modal">Ver cronograma</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <button type="button" class="btn" onclick="nextPrev(1)" id="to-form">Enviar datos</button>
+                            </div>
+                        </div>
+                        <div class="tab tab-inactive form-item">
+                            <div class="text-center">
+                                <h2 style="font-weight: bold;">Gracias por dejarnos tus datos</h2>
+                                <h5>Un asesor se comunicará contigo.</h5>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- /FORM -->
+                </div>
+                <div class="d-none d-md-flex col-md-6 d-flex align-items-end">
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+<!--form-->
+
+
+  <section id="section1" class="mt-5 section1-invertir">
+    <div class="container row flex-column-reverse flex-lg-row-reverse align-items-center m-auto d-flex">
+        <div class="row">
+            <div class="col-12 d-none d-md-block">
+                <h2 class="title-section text-center" style="font-weight: bold;font-size: 50px;color: #000070;">Accede a tu préstamo</h2>
+                <h2 class="title-section text-center" style="font-weight: bold;font-size: 50px;color: #000070;">con garantía hipotecaria</h2>
+                <div class="subrayado" style="border-bottom: 5px solid #e20e5f;
+                    width: 150px;
+                    margin: auto;
+                    padding-bottom: 0px;"></div>
+                <p class="azulitofuente text-center pt-4"style="font-weight: bold;font-size: 15px; color:#000070">te ofrecemos las mejores tasa del mercado, accede a tu <br>préstamo desde nuestra web</p>
+            </div>
+    
+            <div class="col-md-4 d-flex justify-content-center text-center imagen-card1">
+                <div class="card-paso card-paso-v2 card-paso-desktop-1">
+                  
+                    <div class="fila imagen imagen-v2">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/kjkiqtxg.json"
+                            trigger="loop"
+                            delay="1500"
+                            colors="outline:#121331,primary:#646e78,secondary:#4bb3fd,tertiary:#ebe6ef"
+                            style="width:150px;height:150px"
+                            class="imagen-card">
+                        </lord-icon>
+                   <h3 class="text-rosa">Contáctanos</h3>
+                    </div>
+                        <h4 class="text-azulito">Registra tus datos, un ejecutivo especializado te estará atendiendo</h4>
+                    </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center text-center imagen-card1">
+                <div class="card-paso card-paso-v2 card-paso-desktop-1">
+                    <div class="fila">
+                  
+                    </div>
+                    <div class="fila imagen imagen-v2">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/etqbfrgp.json"
+                            colors="outline:#131432,primary:#92140c,secondary:#f24c00,tertiary:#b26836,quaternary:#ebe6ef"
+                            trigger="loop"
+                            delay="1500"
+                            style="width:150px;height:150px"
+                            class="imagen-card">
+                        </lord-icon>
+                   <h3 class="text-rosa">Califica</h3>
+                    </div>
+                        <h4 class="text-azulito">Evaluación rápida y sencilla sin mucho requisitos</h4>
+                    </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center text-center imagen-card1">
+                <div class="card-paso card-paso-v2 card-paso-desktop-1">
+                    <div class="fila imagen imagen-v2">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/pimvysaa.json"
+                            trigger="loop"
+                            delay="1500"
+                            colors="outline:#121331,primary:#b26836,secondary:#ffc738"
+                            style="width:150px;height:150px"
+                            class="imagen-card">
+                        </lord-icon>
+                   <h3 class="text-rosa">Recibe tu préstamo</h3>
+                    </div>
+                        <h4 class="text-azulito">Los desembolsos son rápidos, ante un notario público</h4>
+                    </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+<section id="section2" class="pb-0 section2-prestamos m-auto" style="margin-bottom: 100px !important; margin-top: 80px !important;">
+    <div class="container">
+        <div class="row m-auto">
+     
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="item">
+                    <h3><span class="beneficios" style="background-color:#E30E60 ; color: white;">Conoce</span><br/><span class="beneficios mt-1"  style="background-color:#E30E60 ;color: white;">los beneficios:</span></h3>
+                    <p class="azulitofuente">Te otorgamos tu préstamo en tiempo récord y con el mejor estándar de atención.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="item">
+                    <ul class="check-list">
+                        <li class="azulitofuente"><p>Tasa Efectiva Mensual desde 2% (TEM)</p></li>
+                        <li class="azulitofuente"><p>Desembolso en notaría</p></li>
+                        <li class="azulitofuente"><p>Cronogramas a medida</p></li>
+                        <li class="azulitofuente"><p>Puedes pagar hasta en 60 meses</p></li>
+                        <li class="azulitofuente"><p>Asesoría personalizada</p></li>
+                        <li class="azulitofuente"><p>No vemos Infocorp</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section3" class="section3-prestamos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="margin-bottom: 70px !important;">
+                <h2 class="title-section text-center display-4" style="font-weight: bold; margin-bottom: 20px !important;">¿Cumples los requisitos?</h2>
+                <div class="subrayado" style="border-bottom: 5px solid #e20e5f;
+                    width: 150px;
+                    margin: auto;
+                    padding-bottom: 0px;"></div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="item">
+                    <div>
+                        <h2 style="color:#E30E60 !important;font-weight: bold; ">Propiedad inscrita en SUNARP:</h2>
+                    </div>
+                    <ul class="check-list">
+                        <li class="azulitofuente"><p>Autovalúo municipal actualizado.</p></li>
+                        <li class="azulitofuente"><p>Copia literal actualizada del inmueble del Registro Público competente a la ciudad.</p></li>
+                     
+                        <li class="azulitofuente"><p>Testimonio o documento público que acredite la titularidad de la propiedad.</p></li>
+                        <li class="azulitofuente"><p>Recibo de servicios públicos  (Luz, agua ó gas).</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3 justify-content-end">
+                <div class="item">
+                    <div>
+                        <h2 style="color:#E30E60 !important;font-weight: bold; ">Del solicitante:</h2>
+                    </div>
+                    <ul class="check-list">
+                        <li class="azulitofuente"><p>Copia de DNI del propietario y/o fiador solidario.</p></li>
+                        <li class="azulitofuente"><p>Copia literal de separación convencional (de ser el caso).</p></li>
+                        <li class="azulitofuente"><p>Documentos que sustenten su capacidad de pago.</p></li>
+                        <li class="azulitofuente"><p>Partida de matrimonio (opcional).</p></li>
+                        <li class="azulitofuente"><p>Recibos de servicios del fiador solidario (opcional).</p></li>
+                        <li class="azulitofuente"><p>Certificado de salud mental (mayores de 70 años).</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 mt-3 text-center mb-4" style="margin-bottom: 70px !important;margin-top: 70px !important;">
+                <div class="seccionPide">
+                    <h3 class="m-4">Pide aquí tu préstamo</h3>
+                    <div class="mb-4">
+                        <button type="button" class="btn px-5" onclick="topPage()">¡Solicítalo ahora!</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade" id="cronograma_modal" tabindex="-1" aria-labelledby="cronograma_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="cronograma_modal_label">Cronograma</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table id="table_cronograma" class="table">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer py-5 justify-content-center">
+
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+                <div class="row">
+                    <img class="footer-logo" src="imagenes/logofooterpestasocio.png" alt="logo">
+                </div>
+                <div class="row">
+                    <span class="span-copyright"style="text-align:justify !important">
+                        PrestaSocio es una marca de Grupo Qolqe, Acelerador de Negocios e Inversiones S.A.C. identificado con RUC 20610266569,
+                         cuyo propósito es generar oportunidades de desarrollo a los empresarios que no tienen acceso a la banca tradicional.
+                         Somos una empresa dedicada a brindar servicios financieros de manera sencilla, responsable, transparente y confiable.</span>
+                </div>
+        </div>
+        <div class="col-md-2">
+            <div class="d-flex flex-column justify-content-start">
+                <div class="row m-3 d-flex">
+                    <h4>Conoce más</h4>
+                    <ul class="enlaces-footer mt-3 d-flex flex-column">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="prestamos.html">Préstamos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="row ms-3 align-items-center">
+                    <h4>Síguenos</h4>
+                    <ul class="redes-footer d-flex  mt-3">
+                        <li><a href="https://www.facebook.com/prestasocio.pe" target="_blank"><img src="imagenes/fb.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/prestasocio.pe" target="_blank"><img src="imagenes/instagram.png" alt=""></a></li>
+                        <li><a href="https://wa.me/51970488823" target="_blank"><img src="imagenes/wsp.png" alt=""></a></li>
+                        <!-- <li><a href="mailto:consultas@prestasocio.com.pe" target="_blank"><i class="fa-solid fa-square-envelope" style="color: white; border-radius: 100px;background-color: #e20e5f;border: 4px solid #e20e5f;"></i></a></li> -->
+                        <li><a href="https://www.youtube.com/channel/UCJlRGflUnJJG8YOtVZ7EGfw" target="_blank"><i class="fa-brands fa-youtube" style="color: white; border-radius: 100px;background-color: #e20e5f;border: 4px solid #e20e5f;"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@prestasocio" target="_blank"><i class="fa-brands fa-tiktok" style="color: white; border-radius: 100px;background-color: #e20e5f;border: 4px solid #e20e5f;"></i></a></li>
+                    </ul>                        
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="d-flex flex-column justify-content-start">
+                <div class="row mt-3 enlaces-footer">
+                    <h4>Contáctanos</h4>
+                    <div class="row col-12 d-flex">
+                        <div class="row col-2">
+                        <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="row  col-11">
+                            <span></i>970 488 823</span>
+                        </div>
+                    </div>
+                    <div class="row  col-2">
+                        <i class="fa-solid fa-location-dot "></i>
+                    </div>
+                    <div class="row  col-11">   
+                        <span style="line-height: 1.4rem;"> Av. Canaval y Moreyra 290 - Oficina No. 42  San Isidro, Lima - Perú.</span>   
+                    </div>
+                </div>
+                <div class="row md-3 mt-4">
+                    <h4>Libro de Reclamaciones</h4>
+                    <a href="#" target="_blank">
+                        <img class="libro-reclamaciones mt-3" src="imagenes/libro-reclamaciones.png" alt="libro-reclamaciones">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" id="asociados-a">
+            <div class="d-flex flex-column">
+                <div class="row m-3 text-center">
+                    <h4>Asociados a:</h4>
+                </div>
+                <div class="row m-3 d-flex justify-content-center">
+                    <img src="imagenes/logofooter 1.png" alt="camara de comercio de lima">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+<script src="https://kit.fontawesome.com/3a0f958b91.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/requestPrestamos.js"></script>
+    <script src="js/step-form.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

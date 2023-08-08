@@ -1,0 +1,252 @@
+/* FORMULARIO */
+#regForm {
+    margin: 0px auto;
+    padding: 0px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-form-form .row{
+    align-items: center;
+  }
+  
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #4caf50;
+}
+
+.tab-inactive,
+.tab-inactive * {
+    /* display: none; */
+    max-height: 0px;
+    padding: 0 !important;
+    left: 0;
+    visibility: hidden;
+    border: none;
+    opacity: 0;
+}
+.tab {
+    border: 1px solid #dedbda;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #888888;
+    padding: 2rem 5rem;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    color: inherit;
+    text-decoration: none;
+}
+.info:hover {
+    color: inherit;
+}
+
+.info i {
+    font-size: 1.2rem;
+}
+
+.tab h4 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+}
+
+.tab p {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+}
+
+.input-form-inversiones {
+    background-color: rgb(255, 255, 255) !important;
+    color: #002D74;
+    border: 1px solid #002D74 !important;
+}
+
+p.data {
+    text-align: left;
+}
+
+.form-check-input:checked {
+    background-color: rgb(102, 47, 152) !important;
+    border-color: rgb(102, 47, 152) !important;
+}
+
+.slider-col>input.invalid {
+    border-color: #E30E60;
+}
+
+.amount-box>i {
+    color: #E30E60;
+    margin-bottom: 30px;
+    transform: translateY(15px);
+    cursor: pointer;
+}
+
+.amount-box {
+    gap: 3px;
+    align-items: center;
+}
+
+#amount-input {
+    border-color: rgb(102, 47, 152);
+    color: #000070;
+    width: 40%;
+    font-size: 15px;
+    margin-left: .5em;
+    margin-right: .5rem;
+}
+
+#regForm {
+    padding: 3rem 5rem 0;
+    color: #002D74;
+    
+}
+
+#result-m {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#r-mensual {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #E30E60;
+}
+#result-t {
+    font-size: 1.2rem;
+}
+
+#datos-simulador table .des{
+    color: #E30E60;
+    font-weight: 700;
+}
+
+.info-simulador p{
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+#to-result {
+    font-size: 1.3rem;
+    padding: .5rem 1.5rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 760px) {
+
+    .sim select {
+        text-align: center;
+        width: 80%;
+    }
+    
+    .sim .amount button {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #regForm {
+        padding: 1rem !important;
+        margin: 1rem 0 !important;
+        margin-top: 100px !important;
+    }
+
+    .tab {
+        padding: .2rem 0rem !important;
+    }
+
+    .tab h4 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .tab p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem !important;
+    }
+
+    .sim select {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .sim .amount button {
+        font-size: 25px;
+    }
+
+    .info {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #regForm {
+        padding: 0 !important;
+        margin: 1rem 0 3rem !important;
+    }
+
+    .tab {
+        padding: .4rem 1.8rem !important;
+    }
+
+    .tab h4 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .tab p {
+        font-size: .95rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tab {
+        padding: .8rem 1.2rem !important;
+    }
+
+    .tab h4 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .tab {
+        padding: 1.5rem 3rem;
+    }
+
+    .tab h4 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+}
+.nav-link.selected {
+    font-weight: bold;
+  }

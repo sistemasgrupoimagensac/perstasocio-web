@@ -1,0 +1,371 @@
+
+.nav-link{
+  color:#012A66;
+}
+
+.text-white{
+    color:white !important;
+  }
+  .logo{
+    margin-left: 30px;
+    max-width: 270px !important;
+    
+  }
+  .navbar{
+    background-color: white !important;
+    color: #012A66;
+    font-size: 20px;
+  }
+  .nav-link.selected {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #e20e5f;
+    text-decoration-thickness: 3px;
+  }
+.imagen-card1 {
+  background: transparent;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 275px;
+  height: 363px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 6px 9px 18px 0px rgba(0, 0, 0, 0.25);
+}
+
+#main-invertir {
+  background: url('/imagenes/señorbanner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#main-invertir .fila {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+#main-invertir .col-md-8 {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.imagenbanerprestamo{
+  width: 100%;
+  margin: 0;
+  
+}
+.banner{
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    height: 1200px !important;
+  
+  }
+  .text-white{
+    color:white !important;
+  }
+
+  .imagen-card1{
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 375px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 6px 9px 18px 0px rgba(0, 0, 0, 0.25);
+  }
+  .container-invertir-accordion {
+    max-width: 1080px !important;
+}
+
+#accordionInvertir *{
+    color: #000070 !important;
+}
+
+#accordionInvertir button{
+    font-weight: 700;
+}
+
+.list-invertir {
+    list-style: circle;
+}
+
+.list-invertir > li{
+    padding: 5px 0;
+}
+
+#accordionInvertir .accordion-button, #accordionInvertir .accordion-button:not(.collapsed) {
+    background-color: #d9d9d9 !important;
+    border-radius: 10px !important;
+    box-shadow: initial !important;
+}
+
+#accordionInvertir .accordion-body::before {
+    content: "";
+    display: block;
+    margin: -1rem 0 1rem 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f44902;
+}
+
+#accordionInvertir .accordion-body {
+    text-align: justify;
+}
+
+#accordionInvertir .accordion-button{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#accordionInvertir .accordion-button:focus {
+    border-color: pink;
+    box-shadow: initial;
+}
+
+#accordionInvertir .accordion-item{
+    margin-bottom: 1rem;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+#accordionInvertir .accordion-button::after {
+    background-image: url("../img/down.svg");
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    padding: 15px;
+    background-position: 5px 5px;
+}
+
+#accordionInvertir .accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg);
+}
+.txtbeneficios{
+   font-size: 30px;
+}
+.text-bold {
+    font-weight: bold;
+  }
+  
+  .text-blue {
+    color: #000070;
+  }
+
+  .textorosa{
+    color: #E30E60;
+                font-size: 30px;
+                font-family: Poppins;
+                font-weight: 700;
+                line-height: 120%;
+                letter-spacing: -0.3px;
+  }
+.btn{
+    background-color: #E30E60;
+    color: white;
+}
+.btn:hover{
+  background-color: #E30E60;
+  color: white;
+}
+@media (max-width: 768px) {
+  .logo{
+    margin-left: 30px;
+    max-width: 200px !important;
+    
+  }
+  
+  #main-invertir {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+  }
+  #main-invertir .fila {
+    display: flex;
+    height:500px ;
+  }
+  
+  #main-invertir .col-md-8 {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+
+}
+.mobile{
+    display: none;
+}
+.text-white{
+  color:white !important;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navbar-collapse {
+  animation: slideIn 0.5s;
+}
+.seccionPide{
+  text-align: center;
+}
+
+.seccionPide h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .beneficios {
+      margin: auto;
+      margin-bottom: 1px;
+  }
+
+  #section2 .item {
+      width: 100%;
+  }
+
+  #section1 {
+      padding-bottom: 30px;
+      margin: 0 !important;
+  }
+
+  #section2 .item span {
+      font-size: 2rem;
+  }
+
+  .section-prestamos p {
+      font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .beneficios {
+      margin: auto;
+      margin-bottom: 1px;
+  }
+
+  #section2 .item span {
+      font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .beneficios {
+      margin: auto;
+      margin-bottom: 1px;
+  }
+}
+.section2 .item {
+  width: 80%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.section2-prestamos span, .section2-prestamos p{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#section2 .item p {
+  text-align: left;
+  width: 100%;
+}
+
+#section2 .item span {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link.selected {
+  color: #000070 !important;
+  font-weight: bold;
+
+    text-decoration: underline;
+    text-decoration-color: #e20e5f;
+    text-decoration-thickness: 3px;
+
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #000070;
+}
+h3{
+  color:#000070;
+}
+h2{
+  color:#000070;
+}
+.azulito{
+  color:#000070;
+}
+.azulitofuente{
+  color:#000070;
+  font-size: 25px;
+}
+
+/* Add this CSS to your stylesheet or style tag */
+.check-list {
+  list-style-type: none; /* Hide default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 30px; /* Create space for the checkmark */
+}
+
+.check-list li::before {
+  content: "\2713"; /* Unicode checkmark character */
+  position: absolute;
+  left: 0;
+  top: 50%; /* Adjust the vertical alignment */
+  transform: translateY(-50%);
+  color: #E30E60; /* Set the checkmark color */
+  font-weight: bold; /* Add some thickness to the checkmark */
+}
+
+.card img {
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Agregar bordes redondeados a las imágenes */
+  border: none; /* O border: 0; para quitar el borde */
+}
+/* Estilo para los elementos card */
+.card {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Para alinear el contenido verticalmente */
+  margin: 10px; /* Ajustar el valor según el espacio deseado entre las tarjetas */
+border: none; /* O border: 0; para quitar el borde */
+}
+.imagen-card1{
+  background: transparent;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 275px;
+  height: 363px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 6px 9px 18px 0px rgba(0, 0, 0, 0.25);
+}
+.text-rosa{
+  color: #e20e5f !important;
+}
+.text-azulito{
+  color:#000070 !important;
+}

@@ -1,0 +1,244 @@
+.nav-link{
+  color:#012A66;
+}
+.item {
+  flex-direction: row !important;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+  background-color: #ffffff;
+  padding-top: 0 !important;
+  transition: all .5s ease;
+}
+.item:hover {
+  box-shadow: 0px 0px 18px #888888;
+  border-radius: 30px;
+}
+
+.text-white{
+    color:white !important;
+  }
+  .logo{
+    margin-left: 30px;
+    max-width: 270px !important;
+  }
+  .navbar{
+    background-color: white !important;
+    color: #012A66;
+    font-size: 20px;
+  }
+  .nav-link.selected {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #e20e5f;
+    text-decoration-thickness: 3px;
+  }
+  .parrafobanner1{
+    color: #000070 !important;
+    max-width: 750px; 
+    margin: auto; 
+    background-color: aliceblue;
+    font-size: 80px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.63px;  
+}
+.parrafobanner2{
+    color: #000070 !important;
+    max-width:400px; margin: auto;
+    background-color: aliceblue;
+    font-size: 6rem;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    padding-bottom: 10px;  
+    font-family: Poppins;
+    line-height: 120%;
+    margin-top: 10px; 
+}
+
+  @media (max-width: 768px) {
+    .logo{
+      margin-left: 30px;
+      max-width: 200px !important;
+    }
+    .banner{
+      background-image: url('/imagenes/nosotrosresponsivebanner.png');
+    }
+    .parrafobanner{
+            color: #000070 !important;max-width: 500px; margin: auto; background-color: aliceblue; font-size: 6rem;
+            font-weight: 700;
+            text-align: center;
+            font-size: 63px;
+            font-family: Poppins;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -0.63px;  
+    }
+    .divparrrafo1banner{
+      display: block !important;
+      background-color: aliceblue;
+      margin-bottom: 50px;
+    }
+    p{
+      color:#012A66;
+    }
+    .parrafoAzul{
+      color:#012A66 !important;
+      font-size: 30px !important;
+    }
+    h1{
+      color:#012A66;
+    }
+    span{
+      color:white;
+    }
+    h2{
+      color:#012A66;
+    }
+    .img-1, .img-2 {
+      display: none;
+    }
+    
+    .img-3 {
+      display: block;
+    }
+ 
+    
+  }
+
+.banner{
+    margin: 0;
+    background-image: url('/imagenes/bannernosotros.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1200px !important;
+  
+  }
+  .nav-link.selected {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #e20e5f;
+    text-decoration-thickness: 3px;
+  }
+
+.box {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+.box img {
+    width: 100%;
+    max-width: 600px;
+}
+
+#section1 {
+    margin: 2rem 0;
+}
+.section1-nosotros h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+#section-vision-mision h2, #section-clientes h2 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navbar-collapse {
+  animation: slideIn 0.5s;
+}
+p{
+  color:#012A66;
+}
+
+.parrafoAzul{
+  color:#012A66 !important;
+  font-size: 25px !important;
+}
+@media (min-width: 768px) {
+  .img-1, .img-2 {
+    display: block;
+  }
+  
+  .img-3 {
+    display: none;
+  }
+}
+/* Estilo para los elementos card */
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Agregar bordes redondeados a las imágenes */
+  border: none; /* O border: 0; para quitar el borde */
+}
+/* Estilo para los elementos card */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Para alinear el contenido verticalmente */
+  margin: 10px; /* Ajustar el valor según el espacio deseado entre las tarjetas */
+border: none; /* O border: 0; para quitar el borde */
+}
+/* Add this CSS to your stylesheet or style tag */
+.social-icon {
+  max-width: 80px; /* Adjust the maximum width as per your preference */
+  height: auto;
+  margin: 10px;
+}
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .icon {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .section-valores {
+    margin-left: 200px !important; 
+    margin-right: 200px !important;
+    margin-bottom: 100px !important;
+  }
+}
+
+
+.linea-mision {
+  position: relative;
+  color: #000070 !important;
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.linea-mision::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Ajusta este valor para el espacio entre el texto y la línea */
+  left: 0;
+  width: 100%;
+  height: 1px; /* Grosor de la línea */
+  background-color: #E30E60;
+}
+
